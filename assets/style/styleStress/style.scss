@@ -150,6 +150,6 @@ ul {
     background-image: url('../../images/imgStress/img/wave\ \(3\).svg');
 }
 
-@media (min-width: 250px) and (max-width: 950px) {
+@media (min-width: 250px) and (max-width: 1600px) {
     @include mediascreen1;
 }

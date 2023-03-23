@@ -76,7 +76,7 @@ p {
     background-image: url('../../images/imgMeditation/img/wave\ \(4\).svg');
 }
 
-@media (min-width: 250px) and (max-width: 950px) {
+@media (min-width: 250px) and (max-width: 1600px) {
     .container__information-last {
         @include size;
         display: flex;
