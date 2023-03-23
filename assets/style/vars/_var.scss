@@ -41,7 +41,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Fun;
   font-style: bold;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3rem;
   color: $blueColor;
 }
@@ -50,7 +50,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Fun;
   font-style: normal;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 3rem;
   color: $blueColor3;
 }
@@ -163,7 +163,7 @@ a:focus {
 @mixin mediascreen1 {
   h1,
   h2 {
-      font-size: 24px;
+      font-size: 20px;
   }
 
   p {
