@@ -26,7 +26,6 @@ h2 {
   line-height: 3rem;
   color: #679FDB;
   color: red;
-  margin-bottom: 2%;
 }
 
 p,
@@ -62,10 +61,11 @@ body {
   text-align: justify;
 }
 .health-manual .health-manual__title .title__info {
-  padding: 4%;
+  padding: 15px;
 }
 .health-manual .title__button {
-  padding-left: 4%;
+  padding-left: 15px;
+  margin-bottom: 15px;
 }
 .health-manual .cons__button {
   background-color: #1D6DB6;
@@ -162,7 +162,7 @@ body {
   opacity: 1;
   border: 8px solid #B28990;
 }
-@media (min-width: 1800px) and (max-width: 3000px) {
+@media (min-width: 1600px) and (max-width: 3000px) {
   .health-manual .health-manual__cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -172,21 +172,7 @@ body {
   }
 }
 
-@media (min-width: 750px) and (max-width: 866px) {
-  .health-manual {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  .health-manual .health-manual__cards {
-    display: flex;
-    gap: 10px;
-    padding: 10px;
-  }
-}
-@media (min-width: 867px) and (max-width: 1530px) {
+@media (min-width: 768px) and (max-width: 1530px) {
   .health-manual {
     width: 100%;
     display: grid;
@@ -198,8 +184,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-    padding: 20px;
+    gap: 20px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 200px) and (max-width: 749px) {
