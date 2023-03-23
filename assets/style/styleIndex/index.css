@@ -13,7 +13,7 @@ h1 {
   font-family: "Natasha";
   font-style: bold;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 3rem;
   color: #1D6DB6;
 }
@@ -22,7 +22,7 @@ h2 {
   font-family: "Natasha";
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 3rem;
   color: #679FDB;
   color: red;
@@ -34,7 +34,7 @@ h3 {
   font-family: "Natasha";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: #696969;
 }

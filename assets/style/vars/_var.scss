@@ -41,7 +41,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Fun;
   font-style: bold;
   font-weight: 800;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 3rem;
   color: $blueColor;
 }
@@ -50,7 +50,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Fun;
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 3rem;
   color: $blueColor3;
 }
@@ -59,7 +59,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Fun;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: $textColor;
 }
@@ -68,7 +68,7 @@ $font-joker: 'M PLUS Rounded 1c', sans-serif;
   font-family: $font-Similar;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: $textColor;
 }
@@ -163,11 +163,11 @@ a:focus {
 @mixin mediascreen1 {
   h1,
   h2 {
-      font-size: 20px;
+      font-size: 10px;
   }
 
   p {
-      font-size: 12px;
+      font-size: 10px;
   }
 
   img {
@@ -182,7 +182,7 @@ a:focus {
       width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
       padding: 4%;
   }
 

@@ -13,7 +13,7 @@ h2 {
   font-family: "Natasha";
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 3rem;
   color: #679FDB;
   margin-bottom: 2%;
@@ -28,7 +28,7 @@ ul {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 2rem;
   color: #696969;
 }
@@ -131,10 +131,10 @@ ul {
 @media (min-width: 250px) and (max-width: 950px) {
   h1,
   h2 {
-    font-size: 20px;
+    font-size: 10px;
   }
   p {
-    font-size: 12px;
+    font-size: 10px;
   }
   img {
     width: 80%;
@@ -146,7 +146,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 4%;
   }
   .container__information-mirror {
