@@ -1,0 +1,113 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+img {
+    @include size;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+p,
+ul {
+    @include text;
+    font-family: $font-Similar;
+}
+
+.header__wave {
+    background-image: url('../../images/imgSupplements/img/wave\ \(20\).svg');
+    @include headerVave;
+    @include navigation;
+}
+
+.container__information-last {
+    @include size;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    padding: 4%;
+    margin-top: 50px;
+
+    .important {
+        @include size;
+        display: grid;
+        background-color: $pinkColor;
+        border-radius: 10px;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+
+        h2 {
+            color: $ligthColor;
+        }
+    }
+
+    .title {
+        @include size;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .part-second {
+        @include size;
+        padding: 30px;
+        text-align: justify;
+        display: grid;
+        align-items: center;
+        background-color: $shadowBlue;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    @include footer;
+    align-items: flex-end;
+    background-image: url('../../images/imgSupplements/img/wave\ \(17\).svg');
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    img {
+        width: 80%;
+    }
+
+    .header__wave {
+        height: 20vh;
+    }
+
+    .container__information-last {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer {
+        display: none;
+    }
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap");
+@font-face {
+  font-family: "Natasha";
+  src: url(/assets/fonts/Natasha.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "Natasha";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #679FDB;
+  margin-bottom: 2%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-family: "Natasha";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #696969;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__wave {
+  background-image: url("../../images/imgMeditation/img/wave (5).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.header__wave .header__nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+.header__wave a {
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 600;
+}
+.header__wave a:hover,
+.header__wave a:focus {
+  color: #696969;
+  outline: none;
+}
+
+.container__information-last {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-template-rows: 30% auto;
+  gap: 20px;
+  padding: 4%;
+}
+.container__information-last .important {
+  width: 100%;
+  display: grid;
+  background-color: #E0F1F3;
+  border-radius: 10px;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: center;
+}
+.container__information-last .title {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 30px;
+}
+.container__information-last .part-first {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.container__information-last .part-first img {
+  width: 100%;
+}
+.container__information-last .part-second {
+  width: 100%;
+  padding: 30px;
+  text-align: justify;
+  display: grid;
+  align-items: center;
+  background-color: #FFFACD;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 35vh;
+  color: #FFFACD;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  padding-bottom: 1%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  justify-content: center;
+  background-image: url("../../images/imgMeditation/img/wave (4).svg");
+}
+.footer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+  .container__information-last {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */

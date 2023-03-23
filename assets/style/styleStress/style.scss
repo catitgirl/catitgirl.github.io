@@ -1,0 +1,155 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+img {
+    @include size;
+}
+
+.header__wave {
+    background-image: url('../../images/imgStress/img/wave\ \(2\).svg');
+    @include headerVave;
+    @include navigation;
+}
+
+h1 {
+    @include title;
+    text-align: right;
+    padding-right: 10%;
+}
+
+p {
+    @include textSimilar;
+}
+
+ul {
+    @include textSimilar;
+}
+
+.container__information-first {
+    @include size;
+
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 50% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        display: grid;
+        background-color: $violetColor;
+        border-radius: 10px;
+        align-items: center;
+        padding: 20px;
+
+        h2 {
+            color: $ligthColor;
+            font-size: 28px;
+        }
+
+    }
+
+    .title {
+        display: grid;
+        padding: 30px;
+
+        ul {
+            @include ul;
+        }
+    }
+
+    .part-first {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part-second {
+        display: grid;
+        padding: 20px;
+        align-items: center;
+        text-align: justify;
+        background-color: $bodyColor;
+        border-radius: 10px;
+
+        ul {
+            @include ul;
+        }
+    }
+
+}
+
+.container__information-last {
+    @include size;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-rows: 50% auto;
+    gap: 20px;
+    padding: 4%;
+    margin-top: 50px;
+
+    .important {
+        display: grid;
+        background-color: $violetColor;
+        border-radius: 10px;
+        align-items: center;
+        padding: 20px;
+
+        h2,
+        p {
+            color: $ligthColor;
+        }
+    }
+
+    .title {
+        @include size;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+
+        ul {
+            @include ul;
+        }
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            @include size;
+        }
+    }
+
+    .part-second {
+        @include size;
+        padding: 30px;
+        text-align: justify;
+        display: grid;
+        align-items: center;
+        background-color: $ligthColor;
+        border-radius: 10px;
+
+        ul {
+            @include ul;
+        }
+    }
+}
+
+.footer {
+    @include footer;
+    justify-content: center;
+    background-image: url('../../images/imgStress/img/wave\ \(3\).svg');
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+    @include mediascreen1;
+}

@@ -1,0 +1,85 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+img {
+    @include size;
+}
+
+p {
+    @include text;
+    font-family: $font-Similar;
+}
+
+.header__wave {
+    background-image: url('../../images/imgMeditation/img/wave\ \(5\).svg');
+    @include headerVave;
+    @include navigation;
+}
+
+.container__information-last {
+    @include size;
+    display: grid;
+    grid-template-columns: auto 20%;
+    grid-template-rows: 30% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        @include size;
+        display: grid;
+        background-color: $bodyColor;
+        border-radius: 10px;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .title {
+        @include size;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            @include size;
+        }
+    }
+
+    .part-second {
+        @include size;
+        padding: 30px;
+        text-align: justify;
+        display: grid;
+        align-items: center;
+        background-color: $ligthColor;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    @include footer;
+    justify-content: center;
+    background-image: url('../../images/imgMeditation/img/wave\ \(4\).svg');
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+    .container__information-last {
+        @include size;
+        display: flex;
+        flex-direction: column;
+    }
+}

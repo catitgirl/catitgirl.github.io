@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap");
+@font-face {
+  font-family: "Natasha";
+  src: url(/assets/fonts/Natasha.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Natasha";
+  font-style: bold;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #1D6DB6;
+}
+
+h2 {
+  font-family: "Natasha";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #679FDB;
+  color: red;
+  margin-bottom: 2%;
+}
+
+p,
+h3 {
+  font-family: "Natasha";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #696969;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #E0F1F3;
+}
+
+.health-manual {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 3fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+.health-manual .health-manual__title {
+  width: 100%;
+  display: grid;
+  align-content: center;
+  text-align: justify;
+}
+.health-manual .health-manual__title .title__info {
+  padding: 4%;
+}
+.health-manual .title__button {
+  padding-left: 4%;
+}
+.health-manual .cons__button {
+  background-color: #1D6DB6;
+  width: 250px;
+  height: 60px;
+  border-radius: 15px;
+}
+.health-manual .cons__button span {
+  font-family: "Natasha";
+  font-size: 1rem;
+}
+.health-manual .modal-body img {
+  max-width: 200px;
+}
+.health-manual .button_1 {
+  width: 150px;
+  font-size: 20px;
+}
+.health-manual .health-manual__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 20px;
+}
+.health-manual .health-manual__cards .manual__text h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+.health-manual .health-manual__cards .manual__text h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+.health-manual .health-manual__cards .health-manual__nutrition {
+  display: grid;
+  align-content: center;
+  background-color: #76B28E;
+}
+.health-manual .health-manual__cards .health-manual__nutrition:hover {
+  opacity: 1;
+  border: 8px solid;
+  color: #A2D7E6;
+}
+.health-manual .health-manual__cards .health-manual__sleep {
+  display: grid;
+  align-content: center;
+  background-color: #679FDB;
+}
+.health-manual .health-manual__cards .health-manual__sleep:hover {
+  opacity: 1;
+  border: 8px solid;
+  color: #1D6DB6;
+}
+.health-manual .health-manual__cards .health-manual__stress {
+  display: grid;
+  align-content: center;
+  background-color: #B28990;
+}
+.health-manual .health-manual__cards .health-manual__stress:hover {
+  opacity: 1;
+  border: 8px solid;
+  color: #FDCD4B;
+}
+.health-manual .health-manual__cards .health-manual__meditation {
+  display: grid;
+  align-content: center;
+  background-color: #FDCD4B;
+}
+.health-manual .health-manual__cards .health-manual__meditation:hover {
+  opacity: 1;
+  border: 8px solid;
+  color: #679FDB;
+}
+.health-manual .health-manual__cards .health-manual__sport {
+  display: grid;
+  align-content: center;
+  background-color: #F09D74;
+}
+.health-manual .health-manual__cards .health-manual__sport:hover {
+  opacity: 1;
+  border: 8px solid;
+  color: #76B28E;
+}
+.health-manual .health-manual__cards .health-manual__supplements {
+  display: grid;
+  align-content: center;
+  background-color: #A2D7E6;
+}
+.health-manual .health-manual__cards .health-manual__supplements img {
+  width: 90%;
+  padding-left: 30px;
+}
+.health-manual .health-manual__cards .health-manual__supplements:hover {
+  opacity: 1;
+  border: 8px solid #B28990;
+}
+@media (min-width: 1900px) and (max-width: 3000px) {
+  .health-manual .health-manual__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 866px) {
+  .health-manual {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .health-manual .health-manual__cards {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+@media (min-width: 867px) and (max-width: 1530px) {
+  .health-manual {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% auto;
+    justify-content: center;
+  }
+  .health-manual .health-manual__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+}
+@media (min-width: 200px) and (max-width: 749px) {
+  .health-manual {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .health-manual .health-manual__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% auto;
+    gap: 10px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

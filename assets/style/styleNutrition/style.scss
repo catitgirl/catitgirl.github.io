@@ -1,0 +1,173 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+img {
+    @include size;
+}
+h1 {
+    @include title;
+    padding-left: 4%;
+    
+  }
+
+ul {
+    @include text;
+    color: white;
+    font-size: 16px;
+}
+
+p {
+    @include textSimilar;
+}
+
+.header__wave {
+    background-image: url('../../images/imgNutrition/img/wave\ \(11\).svg');
+    @include headerVave;
+    @include navigation;
+}
+
+.container__information-first {
+    @include size;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 40% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        display: grid;
+        background-color: $yellowColor2;
+        border-radius: 10px;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .title {
+        display: grid;
+        padding: 30px;
+
+        ul {
+            @include ul;
+        }
+    }
+
+    .part-first {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part-second {
+        display: grid;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        background-color: $bodyColor;
+        border-radius: 10px;
+    }
+
+}
+
+.container__information-mirror {
+    @include size;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 40% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        display: grid;
+        background-color: $ligthGreen;
+        border-radius: 10px;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .title {
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+
+        ul {
+            @include ul;
+        }
+    }
+
+    .part-first {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part-second {
+        display: grid;
+        align-items: center;
+        padding: 40px;
+        text-align: center;
+        background-color: $ligthColor;
+        border-radius: 10px;
+
+    }
+}
+
+.container__information-last {
+    @include size;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 40% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        @include important;
+    }
+
+    .title {
+        @include size;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .part-second {
+        @include size;
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        background-color: $ligthColor;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    @include footer;
+    justify-content: center;
+    background-image: url('../../images/imgNutrition/img/wave\ \(12\).svg');
+
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+    @include mediascreen1;
+}

@@ -1,0 +1,204 @@
+//variables colors//
+$blueColor: #1D6DB6;
+$blueColor2: #A2D7E6;
+$blueColor3: #679FDB;
+$greenColor: #76B28E;
+$ligthGreen: #abd3be;
+$violetColor: #B28990;
+$yellowColor1: #FDCD4B;
+$yellowColor2: #F09D74;
+$textColor: #696969;
+$bodyColor: #E0F1F3;
+$ligthColor: #FFFACD;
+$shadowBlue: #B9D4E7;
+$pinkColor: #E24E69;
+
+@mixin hover {
+  opacity: 1;
+  border: 8px solid
+}
+
+//variable body
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//variables and mixins fonts//
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'Natasha';
+  src: url(/assets/fonts/Natasha.ttf);
+}
+
+$font-Fun: 'Natasha';
+$font-Similar: 'Roboto', sans-serif;
+$font-joker: 'M PLUS Rounded 1c', sans-serif;
+
+@mixin title {
+  font-family: $font-Fun;
+  font-style: bold;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: $blueColor;
+}
+
+@mixin titleSmall {
+  font-family: $font-Fun;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: $blueColor3;
+}
+
+@mixin text {
+  font-family: $font-Fun;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: $textColor;
+}
+
+@mixin textSimilar {
+  font-family: $font-Similar;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: $textColor;
+}
+
+@mixin ul {
+  padding-top: 20px;
+            font-family: $font-Similar;
+            font-size: 20px;
+            color: $textColor;
+}
+
+//variables blocks
+
+@mixin grid {
+  display: grid;
+  align-content: center;
+}
+
+@mixin size {
+  width: 100%;
+}
+
+@mixin headerVave {
+  background-repeat: no-repeat;
+    background-size: cover;
+    @include size;
+    height: 35vh;
+    font-family: $font-joker;
+}
+
+@mixin navigation {
+  .header__nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+}
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+}
+
+a:hover,
+a:focus {
+    color: $textColor;
+    outline: none;
+}
+}
+
+
+@mixin important {
+
+    width: 100%;
+    display: grid;
+    background-color: $blueColor;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+    h2 {
+        color: $bodyColor;
+        font-size: 20px;
+    }
+
+}
+
+@mixin footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  background-repeat:no-repeat;
+  background-size: cover;
+  @include size;
+  height: 35vh;
+  color: $ligthColor;
+  font-family: $font-joker;
+  padding-bottom: 1%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  img {
+    @include size;
+    object-fit: cover;
+}
+}
+
+//mediascreen
+
+@mixin mediascreen1 {
+  h1,
+  h2 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+
+  img {
+      width: 80%;
+  }
+
+  .header__wave {
+      height: 25vh;
+  }
+
+  .container__information-first {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 4%;
+  }
+
+  .container__information-mirror {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container__information-last {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .footer {
+      display: none;
+  }
+}

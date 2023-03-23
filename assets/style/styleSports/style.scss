@@ -1,0 +1,87 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+img {
+    @include size;
+}
+
+p,
+ul {
+    @include textSimilar;
+}
+
+.header__wave {
+    background-image: url('../../images/imgSports/img/wave\ \(24\).svg');
+    @include headerVave;
+    @include navigation;
+}
+
+.container__information-last {
+    @include size;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    padding: 4%;
+    margin-top: 50px;
+
+    .important {
+        @include size;
+        display: grid;
+        background-color: $blueColor;
+        border-radius: 10px;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+
+        h2 {
+            color: $bodyColor;
+            font-size: 20px;
+        }
+    }
+
+    .title {
+        @include size;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            @include size;
+        }
+    }
+
+    .part-second {
+        @include size;
+        padding: 30px;
+        text-align: justify;
+        display: grid;
+        align-items: center;
+        background-color: $bodyColor;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    @include footer;
+    justify-content: center;
+    background-image: url('../../images/imgSports/img/wave\ \(26\).svg');
+}
+
+@media (min-width: 250px) and (max-width: 950px) {
+    @include mediascreen1;
+}

@@ -1,0 +1,141 @@
+@import '../vars/var';
+
+* {
+    @include reset;
+}
+
+h2 {
+    @include titleSmall;
+    margin-bottom: 2%;
+}
+
+img {
+    @include size;
+}
+
+h3 {
+    @include titleSmall;
+    text-align: center;
+    padding-top: 1.8%;
+    color: $yellowColor2;
+}
+
+p,
+ul {
+    @include textSimilar;
+}
+
+
+.header__wave {
+    background-image: url('../../images/imgSleep/img/wave-yellow\ \(3\).svg');
+    @include headerVave;
+    height: 37vh;
+    @include navigation;
+}
+
+.container__information-mirror {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 40% auto;
+    gap: 20px;
+    padding: 4%;
+
+    .important {
+        display: grid;
+        border-radius: 10px;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+
+        h2 {
+            font-size: 20px;
+        }
+
+        background-color: $ligthGreen;
+    }
+
+    .title {
+        display: grid;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .part-second {
+        display: grid;
+        align-items: center;
+        padding: 40px;
+        text-align: justify;
+        background-color: $ligthColor;
+        border-radius: 10px;
+    }
+}
+
+.container__information-last {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 30%;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    padding: 4%;
+    margin-top: 50px;
+
+    .important {
+        width: 100%;
+        display: grid;
+        background-color: $blueColor;
+        border-radius: 10px;
+        align-items: center;
+        padding: 20px;
+        justify-content: center;
+
+        h2 {
+            color: $bodyColor;
+            font-size: 20px;
+        }
+    }
+
+    .title {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .part-first {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .part-second {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        align-items: center;
+        background-color: #FFFACD;
+        border-radius: 10px;
+    }
+}
+
+.footer {
+    justify-content: center;
+    background-image: url('../../images/imgSleep/img/wave\ \(21\).svg');
+    background-repeat: no-repeat;
+    @include footer;
+    height: 38vh;
+}
+
+@media (min-width: 250px) and (max-width: 1350px) {
+    @include mediascreen1;
+}
